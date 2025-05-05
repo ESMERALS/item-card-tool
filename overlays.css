@@ -22,6 +22,7 @@
 }
 
 .card-front-description {
+    white-space-collapse: preserve;
     top: 24mm;
     left: 3.5mm;
     max-width: 63mm;
