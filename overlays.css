@@ -1,47 +1,48 @@
 .card-front-title {
-    transform: translate(-50%, 0);
-    font-weight: bold;
-    top: 4mm;
-    left: 35mm;
+  transform: translate(-50%, 0);
+  font-weight: bold;
+  top: 4mm;
+  left: 35mm;
 }
 
 .card-front-type {
-    top: 15.5mm;
-    left: 3.5mm;
+  font-style: italic;
+  top: 15.5mm;
+  left: 4.2mm;
 }
 
 .card-front-attunement {
-    left: 63.4mm;
-    top: 17.5mm;
-    width: 3.2mm;
-    height: 3.2mm;
-    background: black;
+  left: 63.4mm;
+  top: 17.5mm;
+  width: 3.2mm;
+  height: 3.2mm;
+  background: black;
 }
 
 .card-front-attunement.enabled {
-    left: 55.68mm;
+  left: 55.68mm;
 }
 
 .card-front-description {
-    white-space-collapse: preserve;
-    top: 24mm;
-    left: 3.5mm;
-    max-width: 63mm;
-    text-overflow: ellipsis;
+  white-space-collapse: preserve;
+  top: 24mm;
+  left: 3.5mm;
+  max-width: 63mm;
+  text-overflow: ellipsis;
 }
 
 .card-front-left-modifier {
-    left: 3mm;
-    top: 94.5mm;
+  left: 3mm;
+  top: 94.5mm;
 }
 
 .card-front-right-modifier {
-    top: 94.5mm;
-    right: 2mm;
+  top: 94.5mm;
+  right: 2mm;
 }
 
 .card-front-weight {
-    transform: translate(-50%, -50%);
-    top: 96mm;
-    left: 35mm;
+  transform: translate(-50%, -50%);
+  top: 96mm;
+  left: 35mm;
 }

@@ -3,14 +3,14 @@ import {initializeCard} from "./InitializeCard.js";
 let cardCounter = 1;
 
 /** @type {HTMLElement} */
-const inputContainer = document.querySelector('#input-container');
+const bodyContainer = document.querySelector('#card-container');
 /** @type {HTMLElement} */
 const firstCardBody = document.querySelector(`.card-body[data-card-id="1"]`);
 /** @type {HTMLElement} */
 const cardBodyTemplate = firstCardBody.cloneNode(1);
 
 /** @type {HTMLElement} */
-const bodyContainer = document.querySelector('#card-container');
+const inputContainer = document.querySelector('#input-container');
 /** @type {HTMLElement} */
 const firstCardInputs = document.querySelector(`.card-inputs[data-card-id="1"]`);
 /** @type {HTMLElement} */
