@@ -11,18 +11,20 @@
 .card-front-attunement {
     left: 63.4mm;
     top: 17.5mm;
-    width: 3mm;
+    width: 3.2mm;
     height: 3.2mm;
     background: black;
 }
 
 .card-front-attunement.enabled {
-    left: 55.9mm;
+    left: 55.68mm;
 }
 
 .card-front-description {
     top: 24mm;
     left: 3.5mm;
+    max-width: 63mm;
+    text-overflow: ellipsis;
 }
 
 .card-front-left-modifier {
