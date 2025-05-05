@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="main.js" type="module"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="overlays.css">
+</head>
+<body>
+
+<div id="input-container">
+
+    <div class="card-inputs" data-card-id="1">
+        <hr>
+        <h2>Card <span class="card-id-indicator">#</span></h2>
+
+        <div class="card-inputs-container">
+            <div class="front-inputs">
+                <h3>Front variables</h3>
+
+                <table class="input-table">
+                    <tbody>
+                    <tr>
+                        <th><label for="card-front-title-input">Title</label></th>
+                        <td><input id="card-front-title-input" type="text"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="card-front-type-input">Type</label></th>
+                        <td><input id="card-front-type-input" type="text"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="card-front-attunement-input">Attunement</label></th>
+                        <td><input id="card-front-attunement-input" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="card-front-description-input">Description</label></th>
+                        <td><textarea id="card-front-description-input" cols="30" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th><label for="card-front-left-modifier-input">Left Modifier</label></th>
+                        <td><input id="card-front-left-modifier-input" type="text"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="card-front-weight-input">Weight</label></th>
+                        <td><input id="card-front-weight-input" type="text"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="card-front-right-modifier-input">Right Modifier</label></th>
+                        <td><input id="card-front-right-modifier-input" type="text"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="back-inputs">
+                <h3>Back variables</h3>
+
+                <table class="input-table">
+                    <tbody>
+                    <tr>
+                        <th><label for="card-back-background-color">Background Color</label></th>
+                        <td><input id="card-back-background-color" type="color"></td>
+                    </tr>
+
+                    <tr>
+                        <th><label for="card-back-background-image">Background Image</label></th>
+                        <td>
+                            <input id="card-back-background-image" type="file" accept="image/png, image/jpeg">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th><label for="card-back-background-size">Background Image Size</label></th>
+                        <td>
+                            <select id="card-back-background-size">
+                                <option value="cover">cover</option>
+                                <option value="contain">contain</option>
+                                <option value="custom">custom</option>
+                            </select>
+                            <br>
+                            <input id="card-back-background-size-x" placeholder="x-size in mm" type="number">
+                            <input id="card-back-background-size-y" placeholder="y-size in mm" type="number">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th><label for="card-back-background-position">Background Image Position</label></th>
+                        <td>
+                            <select id="card-back-background-position">
+                                <option value="center">center</option>
+                                <option value="bottom">bottom</option>
+                                <option value="top">top</option>
+                                <option value="left">left</option>
+                                <option value="right">right</option>
+                                <option value="custom">custom</option>
+                            </select>
+                            <br>
+                            <input id="card-back-background-position-x" placeholder="x-offset in mm" type="number">
+                            <input id="card-back-background-position-y" placeholder="y-offset in mm" type="number">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="card-container">
+
+    <article class="card-body" data-card-id="1">
+        <article class="card-face card-front-face">
+            <img class="card-image-full" src="./assets/default-front.png" alt="Vorderseite Basisbild">
+
+            <span class="card-face-overlay card-front-title">title</span>
+            <span class="card-face-overlay card-front-type">type</span>
+            <div class="card-face-overlay card-front-attunement"></div>
+            <span class="card-face-overlay card-front-description">description</span>
+            <span class="card-face-overlay card-front-left-modifier">left modifier</span>
+            <span class="card-face-overlay card-front-weight">12</span>
+            <span class="card-face-overlay card-front-right-modifier">right modifier</span>
+        </article>
+
+        <article class="card-face card-back-face">
+            <img class="card-image-full" src="./assets/default-back.png" alt="Rückseite Basisbild">
+        </article>
+    </article>
+
+</div>
+</body>
+</html>

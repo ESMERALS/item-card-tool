@@ -1,0 +1,42 @@
+.card-front-title {
+    top: 4mm;
+    left: 3.5mm;
+}
+
+.card-front-type {
+    top: 15.5mm;
+    left: 3.5mm;
+}
+
+.card-front-attunement {
+    left: 63.4mm;
+    top: 17.5mm;
+    width: 3mm;
+    height: 3.2mm;
+    background: black;
+}
+
+.card-front-attunement.enabled {
+    left: 55.9mm;
+}
+
+.card-front-description {
+    top: 24mm;
+    left: 3.5mm;
+}
+
+.card-front-left-modifier {
+    left: 3mm;
+    top: 94.5mm;
+}
+
+.card-front-right-modifier {
+    top: 94.5mm;
+    right: 2mm;
+}
+
+.card-front-weight {
+    transform: translate(-50%, -50%);
+    top: 96mm;
+    left: 35mm;
+}
