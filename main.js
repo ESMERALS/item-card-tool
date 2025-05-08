@@ -3,7 +3,7 @@ import {addCard} from "./modules/AddCard.js";
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    initializeCard(1);
+    addCard();
     addCard();
     addCard();
     addCard();
