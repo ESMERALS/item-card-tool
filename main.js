@@ -1,4 +1,3 @@
-import {initializeCard} from "./modules/InitializeCard.js";
 import {addCard} from "./modules/AddCard.js";
 
 
